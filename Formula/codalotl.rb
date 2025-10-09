@@ -1,16 +1,16 @@
 class Codalotl < Formula
-  desc "AI-powered refactoring assistant for Go that turns agent sprawl into production-ready code."
+  desc "AI-powered refactoring assistant for Go that turns agent sprawl into production-ready code"
   homepage "https://codalotl.ai"
-  version "0.1.4"
+  version "0.1.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://storage.googleapis.com/codalotl-releases/0.1.4/eb1742c5-5b40-4d7b-8c0a-2d48c5c418c6/codalotl-0.1.4-darwin-amd64.zip"
-      sha256 "ebe49d82e63f835b4e771522ef40daede76d738563501cfabce04fc7792997af"
+      url "https://storage.googleapis.com/codalotl-releases/0.1.5/f83c97ed-5a4a-780b-0a75-21862ed2236c/codalotl-0.1.5-darwin-amd64.zip"
+      sha256 "436a9739d15441a80cd51206684f364e13fb037e1c016513064fc8628b147bff"
     end
     if Hardware::CPU.arm?
-      url "https://storage.googleapis.com/codalotl-releases/0.1.4/eb1742c5-5b40-4d7b-8c0a-2d48c5c418c6/codalotl-0.1.4-darwin-arm64.zip"
-      sha256 "d1962b02ba644a58275dfe6f00fab79f890044d6a7093c400745625575e277bb"
+      url "https://storage.googleapis.com/codalotl-releases/0.1.5/f83c97ed-5a4a-780b-0a75-21862ed2236c/codalotl-0.1.5-darwin-arm64.zip"
+      sha256 "f363254d6bfe6f20d2960678f30c58e98ee20ec1dc9e00e47b4cc1cce6ec1b2f"
     end
 
     def install
@@ -20,16 +20,17 @@ class Codalotl < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://storage.googleapis.com/codalotl-releases/0.1.4/eb1742c5-5b40-4d7b-8c0a-2d48c5c418c6/codalotl-0.1.4-linux-amd64.tgz"
-      sha256 "85323e06460f893efa749e41e5e2c60d81117896eecdad04d237338c2e16bd52"
+      url "https://storage.googleapis.com/codalotl-releases/0.1.5/f83c97ed-5a4a-780b-0a75-21862ed2236c/codalotl-0.1.5-linux-amd64.tgz"
+      sha256 "9c35e969b3882e0c7b57b8268d99cd94f28477aed74f9796bd20e4b4a2b231cc"
     end
     if Hardware::CPU.arm?
-      url "https://storage.googleapis.com/codalotl-releases/0.1.4/eb1742c5-5b40-4d7b-8c0a-2d48c5c418c6/codalotl-0.1.4-linux-arm64.tgz"
-      sha256 "83cba59934eb333ba5e8eff440a011171f1f4d7a0998d7309152c9ba3acb94c4"
+      url "https://storage.googleapis.com/codalotl-releases/0.1.5/f83c97ed-5a4a-780b-0a75-21862ed2236c/codalotl-0.1.5-linux-arm64.tgz"
+      sha256 "cb3f31e7975de3673291c157bb69a6ee3d01340e84cdb448b7923c350cb42c61"
     end
 
     def install
       bin.install "codalotl"
     end
   end
+
 end
